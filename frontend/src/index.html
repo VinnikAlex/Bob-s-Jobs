@@ -1,0 +1,57 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bob's Jobs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script src="main.js" type="module" defer></script>
+  </head>
+
+  <nav>
+    <ul>
+      <h1>Bob's Jobs</h1>
+      <li id="link1"><a href="/">Home</a></li>
+      <li id="link2"><a href="/#!/about">About Us</a></li>
+      <li id="link3"><a href="/#!/help">Applicant Help</a></li>
+    </ul>
+
+    <form class="search-form" id="form">
+      <input type="search" id="search" name="search" placeholder="Search..." />
+      <button id="searchbutton" type="button">Search</button>
+      <!-- <a href="/#!/search"></a> -->
+    </form>
+
+    <!-- <script id="login-template" type="text/x-handlebars-template">
+      {{#if user}}
+        <p>Logged in as {{user.username}}</p>
+      {{else}}
+        <form id="login-form">
+          User:
+          <input name="user" />
+          Password:
+          <input name="password" type="password" autocomplete="on" />
+          <input type="submit" />
+        </form>
+      {{/if}}
+    </script> -->
+
+    <form class="login-form" id="login-form">
+      <label for="username"> Username: </label>
+      <input name="username" />
+      <label for="password"> Password: </label>
+      <input name="password" type="password" />
+      <!-- <input class="submitbutton" type="submit" /> -->
+      <button id="loginbutton" class="submitbutton" type="submit">Login</button>
+    </form>
+  </nav>
+
+  <body>
+    <div class="main-container" id="main"></div>
+  </body>
+</html>
